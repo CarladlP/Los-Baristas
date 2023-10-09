@@ -1,0 +1,46 @@
+ /* PALETA DE COLORES proyecto CAFÉ:
+
+ #9A3B3B  rgb(154, 59, 59)
+
+ #C08261   rgb(192, 130, 97)
+
+ #E2C799   rgb(226, 199, 153)
+ 
+ #F2ECBE   rgb(242, 236, 190)
+
+ */
+ 
+ 
+ /* Selector de etiqueta*/
+ h1{
+    background: #F2ECBE;
+    color: #9A3B3B;
+
+  }
+
+  a{
+      color:#C08261;
+
+  }
+
+  /* selector por ID*/
+   #enlaceDeContacto {
+      color: #9A3B3B;
+   }
+   /* Selector por clase*/
+   .oscuro{
+      background: #F2ECBE ;
+      color: #9A3B3B;
+   }
+
+   .subrayado {
+      text-decoration: underline 2px #9A3B3B;
+   }
+
+
+   /* esto me cambia todo en la pagina completa*/
+   /* Selector UNiversal: *
+   *{
+      background-color: #E2C799;
+   }
+   */
