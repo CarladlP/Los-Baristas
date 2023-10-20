@@ -12,6 +12,11 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&display=swap');
  /*Agreguamos un estilo de fuente de letra más acorde al formato digital*/
 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;/* Reseteamos para tener control absoluto de los elementos*/
+ }
 
  /* Selector de etiqueta*/
  body {
@@ -22,7 +27,18 @@
     font-size: 32px;
  }
 
+ header,
+ nav,
+ footer {
+    background-color: hsla(53, 66%, 85%, 0.50);
+    width: 300px;
+    padding: 40px;
+    height: 200px;
+    margin: 20;
+ }
+
  h1 {
+   position: fixed;
     font-size: 2rem;
     /*Usamos rem porque depende del elemento raiz*/
     background: hsla(53, 66%, 85%, 0.50);
@@ -30,7 +46,12 @@
  }
 
  h2 {
-    font-size: 1.5rem;
+   position: relative;/*pongo el texto sobre la imagen*/
+   left: 550px;
+   width: 1000px;
+   font-size: 1.5rem;
+   background: hsla(53, 66%, 85%, 0.50);
+    color: #9c4444;
  }
 
  p {
