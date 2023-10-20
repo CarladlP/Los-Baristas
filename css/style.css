@@ -10,14 +10,25 @@
  
  */
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&display=swap');
+ /*Agreguamos un estilo de fuente de letra más acorde al formato digital*/
 
 
  /* Selector de etiqueta*/
+ body {
+    background-image: url(../img/fondo_1920.jpg);
+    background-size: cover;
+    /*Centramos el fondo de la imagen*/
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+ }
+
  h1 {
     font-size: 2rem;
+    /*Usamos rem porque depende del elemento raiz*/
     background: hsla(53, 66%, 85%, 0.50);
     color: #9c4444;
  }
+
  h2 {
     font-size: 1.5rem;
  }
@@ -25,12 +36,7 @@
  p {
     font-size: 1rem;
  }
- body {
-    background-image: url(../img/fondo_1920.jpg);
-    background-size: cover;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-size: 32px;
- }
+
 
  a {
     color: #876c5e;
@@ -39,12 +45,12 @@
 
  /* selector por ID*/
  #enlaceDeContacto {
-   font-size: 1rem;
+    font-size: 1rem;
     color: #9A3B3B;
  }
 
- #enlacePagina{
-   font-size: 1rem;
+ #enlacePagina {
+    font-size: 1rem;
  }
 
  /* Selector por clase*/
@@ -65,7 +71,7 @@
  .tamaño {
     font-size: 1rem;
 
-}
+ }
 
  /* esto me cambia todo en la pagina completa*/
  /* Selector UNiversal: *
