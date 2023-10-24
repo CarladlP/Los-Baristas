@@ -14,8 +14,10 @@
 
  * {
     box-sizing: border-box;
+    /*El cálculo de los tamaños tiene en cuenta el padding y el border*/
     margin: 0;
-    padding: 0;/* Reseteamos para tener control absoluto de los elementos*/
+    padding: 0;
+    /* Reseteamos para tener control absoluto de los elementos*/
  }
 
  /* Selector de etiqueta*/
@@ -28,17 +30,16 @@
  }
 
  header,
- nav,
  footer {
     background-color: hsla(53, 66%, 85%, 0.50);
-    width: 300px;
-    padding: 40px;
-    height: 200px;
-    margin: 20;
+    width: 1rem;
+    padding: 1rem;
+    height: 2rem;
+    margin: 2rem;
  }
 
  h1 {
-   position: fixed;
+    position: fixed;
     font-size: 2rem;
     /*Usamos rem porque depende del elemento raiz*/
     background: hsla(53, 66%, 85%, 0.50);
@@ -46,11 +47,13 @@
  }
 
  h2 {
-   position: relative;/*pongo el texto sobre la imagen*/
-   left: 550px;
-   width: 1000px;
-   font-size: 1.5rem;
-   background: hsla(53, 66%, 85%, 0.50);
+    position: relative;
+    /*pongo el texto sobre la imagen*/
+    left: 30rem;
+    width: 38rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    background: hsla(53, 66%, 85%, 0.50);
     color: #9c4444;
  }
 
@@ -64,6 +67,10 @@
 
  }
 
+ div p {
+    font-size: 1.3rem;
+ }
+
  /* selector por ID*/
  #enlaceDeContacto {
     font-size: 1rem;
@@ -75,6 +82,32 @@
  }
 
  /* Selector por clase*/
+
+ .flex-container {
+    display: flex;
+    position: sticky;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+
+ }
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: 20rem 15rem 13rem 13rem 13rem 8rem;
+    grid-template-rows: 35rem;
+    /*justify-content: space-around;*/
+    gap: 1rem;
+
+ }
+
+ .grid-container>div>div {
+    text-align: center;
+    padding: 20px 0;
+    /*height: 300rem;*/
+
+ }
+
  .oscuro {
     background: hsla(53, 67%, 85%, 0.50);
     color: #953d3d;
