@@ -1,0 +1,53 @@
+* {
+    padding: auto;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main,footer {
+    border: 3px  red solid;
+    min-height: 50px;
+    margin: 0.5rem
+ }
+
+ /* Selector por clase*/
+ .oscuro{
+    background: #F2ECBE ;
+    color: #9A3B3B;
+ }
+
+ main {
+    min-height: 300px;
+ }
+
+/*este div es un hijo directo del main lo puedeo referenciar asi*/
+
+main>div  { 
+    border: 2px green solid;
+    min-height: 180px;
+    margin: 0.5rem;
+}       
+
+main>aside { 
+    border: 2px #d400ff solid;
+    min-height: 180px;
+    margin: 0.5rem;
+
+}       
+
+ /* Voy a usar el selector de clase para darle estilo a las diferentes clases  */
+
+ .secciones {
+    border: 2px #331313 solid;
+    min-height: 50px;
+    margin: 0.5rem;
+
+ }
+
+ article 
+
+ 
