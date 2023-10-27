@@ -3,7 +3,7 @@ El proyecto cuenta con la participación de cuatro integrantes:
 
 Juan Manuel Borlenghi,
 Lucas Contreras, 
-Agustina Belén
+Agustina Belén y
 Carla de la Pina.
 
 La idea del sitio es dar a conocer el negocio de una cafetería y sus productos.
@@ -19,9 +19,9 @@ local y la master, que es donde esta alojado el proyecto.
 Inicialmente la página principal, index.html, se maquetó y quedó responsive, pero ayer ( 26/10/2023) al hacer varios cambios
 sobre la misma para embellecer la estética, se agregaron en el style.css  container de flexbox y sentencias en grid que resultaron
 en una página más linda pero que no resulta responsive. En vista a la falta de tiempo y por miedo a romper el código o romper algún archivo al
-usar git, preferimos dejarlo así comprometiendonos a resolverlo para la próxima entrega. Ayer, al hacer varios pull y push perdimos gran parte
+usar git, preferimos dejarlo así comprometiéndonos a resolverlo para la próxima entrega. Ayer, al hacer varios pull y push perdimos gran parte
 del trabajo, que nos llevó mucho tiempo restaurar, no quisieramos arruinar nada previo al deadline de la entrega. Nos disculpamos, porque sabemos 
-que no es responsive el main, y que no cumplimos con esa consigna, nos comprometemos como equipo a resolverlo.
+que no es responsive el main, y que no cumplimos con esa consigna, y nos comprometemos como equipo a resolverlo.
 
 Debajo se adjunta el link dónde se puede ver el deploy de nuestra página web.
 
