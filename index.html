@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es"> <!--Cambiamos al idioma español-->
 <head>
     <meta charset="UTF-8">
@@ -147,95 +147,32 @@ DOCTYPE html>
       <label for="checkbox7">Té en Hebras</label>
     </div>
   </div>
-  <div class="box"><h3><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52532.98108367537!2d-58.44778992859407!3d-34.62157228901988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697223750326!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h3></div>
-  <div class="box"><h2><a href="https://www.ico.org/ES/coffee_storyc.asp"> Historia del café </h2></div>
+  <div class="box"><h3><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52532.98108367537!2d-58.44778992859407!3d-34.62157228901988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697223750326!5m2!1ses-419!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h3></div>
+  <div class="box"><a href="javascript:void(0);" onclick="abrirVentanaEmergente()"><h2>Historia del café </h2></a> </div>
 </div>
 
-<footer class="footer">
-  <div class="caja"><h2>Encontranos en nuestras redes</h2></div>
+    <script>
+        function abrirVentanaEmergente() {
+            // URL del enlace que deseas abrir en la ventana emergente
+            var url = "https://www.ico.org/ES/coffee_storyc.asp";
+
+            // Abre la ventana emergente con un tamaño personalizado sin cambiar la página actual
+            var ventanaEmergente = window.open(url, "VentanaEmergente", "width=500,height=400");
+
+            // Asegúrate de que se abrió la ventana emergente
+            if (ventanaEmergente) {
+                // Evita que el enlace predeterminado se active
+                event.preventDefault();
+            }
+        }
+    </script>
+
+  <footer class="footer">
+  <div class="caja"><h2>Encontranos en <br> nuestras redes</h2></div>
   <div class="caja"><a href="https://www.facebook.com/" target="_blank">ᶠᵃᶜᵉᵇᵒᵒᵏ</a></div>
   <div class="caja"><a href="https://www.instagram.com/" target="_blank">𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶</a></div>
   <div class="caja"><img id="gif-ppal" src="img/cafe.gif" alt="gif de cafe" width="200"></div><!--esto es un gif-->
 </footer>
 
-<<<<<<< HEAD
-  </nav>
-  <h2>NUESTRAS SUCURSALES</h2>
-    <br>
-         <img src="img/fachada6.JPG" alt="Fachada del local 1" height="250" width="250">
-                 <img src="img/fachada11.JPG" alt="Fachada del local 2" height="250" width="350">
-        </div>
-        <div class="carrusel-item">
-         <img src="img/fachada9.JPG" alt="Fachada del local 3" height="200" width="200">
-        </div>
-     </div>
-   </div>
-    <h2 id="checkbox"> Elija su bebida favorita</h2>
-    <input type="checkbox" id="Bebida1" name="input-checkbox1" 
-    value="Café expreso">
-    <label for="bebida1"> Café expreso</label>
-    <br>
-   
-    <input type="checkbox" id="Bebida2" name="input-checkbox2" 
-    value="Café cortado">
-    <label for="bebida2"> Café cortado</label>
-    <br>
-    
-    <input type="checkbox" id="Bebida3" name="input-checkbox3" 
-    value="Café americano">
-    <label for="bebida3"> Americano</label>
-    <br>
-    
-    <input type="checkbox" id="Bebida4" name="input-checkbox4" 
-    value="latte machiatto">
-    <label for="bebida4"> Latte Machiatto</label>
-    <br>
-    
-    <input type="checkbox" id="Bebida5" name="input-checkbox5" 
-    value="capuccino">
-    <label for="bebida5">Capuccino</label>
-    <br>
-    
-    <input type="checkbox" id="Bebida6" name="input-checkbox6" 
-    value="frapuccino">
-    <label for="bebida6"> Frapuccino</label>
-    <br>
-    
-    <input type="checkbox" id="Bebida7" name="input-checkbox7" 
-    value="té en hebras">
-    <label for="bebida7"> Té en Hebras</label>
-    <br>
-    <h2><a href="https://www.ico.org/ES/coffee_storyc.asp"> Historia del café </h2>
-        <h3><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52532.98108367537!2d-58.44778992859407!3d-34.62157228901988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697223750326!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h3>
-<br>
-        <h2>Encontranos en nuestras redes</h2>
-        <a href="https://www.facebook.com/" target="_blank">ᶠᵃᶜᵉᵇᵒᵒᵏ</a>
-  <br>
-  <a href="https://www.instagram.com/" target="_blank">𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶</a>
-
-  <footer>
-    <section class="container-fluid">
-        <nav class="menu-">
-           <p>DIAS Y HORARIOS</p>
-           
-           <p>De lunes a domingo de 8:00 a 20:00</p>
-        </nav>
-    </section>
-    <div class="redes-sociales">
-
-        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Facebook"
-                id="imgfb"> </a>
-
-        <a href="https://instagram.com/" target="_blank"> <img src="./img/instagram.png" alt="Instagram"
-                id="imginst"></a>
-    </div>
-
-    <p>Grupo 20 | Python, Codo a Codo| © 2023</p>
-</footer>
-
-
-  <script src="./script/script.js"></script>
-=======
->>>>>>> 67dcc08369b1985cd8777d0807c673145efd80b7
 </body>
 </html>
