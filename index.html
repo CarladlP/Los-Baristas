@@ -109,12 +109,21 @@
   
   
 </main>
-<div class="contenedores">
+<div class="contenedores"> </div>
   <h1>NUESTRAS SUCURSALES</h1>
-  <div class="box"><img src="img/fachada6.JPG" alt="Fachada del local 1" height="250" width="250"> </div>
-  <div class="box"><img src="img/fachada11.JPG" alt="Fachada del local 2" height="250" width="350"></div>
-  <div class="box"><img src="img/fachada9.JPG" alt="Fachada del local 3" height="250" width="300"></div>
-</div>
+  <div class="carrusel">
+     <div class="carrusel-items">
+         <div class="carrusel-item">
+           <img src="./img/fachada6.JPG" alt="" height="200" width="200">  />
+         </div>
+         <div class="carrusel-item">
+           <img src="./img/fachada11.JPG" alt="" height="200" width="300" />
+         </div>
+         <div class="carrusel-item">
+           <img src="./img/fachada9.JPG" alt="" height="200" width="250"/>
+         </div>
+     </div>
+ </div>
 <div class="contenedores">
   <h1>Elija su bebida favorita:</h1>
   <div class="box">
@@ -167,12 +176,28 @@
         }
     </script>
 
-<footer class="footer">
-  <div class="caja"><h2>Encontranos en <br> nuestras redes</h2></div>
-  <div class="caja"><a href="https://www.facebook.com/" target="_blank">ᶠᵃᶜᵉᵇᵒᵒᵏ</a></div>
-  <div class="caja"><a href="https://www.instagram.com/" target="_blank">𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶</a></div>
-  <div class="caja"><img id="gif-ppal" src="img/cafe.gif" alt="gif de cafe" width="200"></div><!--esto es un gif-->
-</footer>
+<!---  FOOTER con botones de redes sociales-->
+  <footer class="footer">
+    <section class="container-fluid">
+        <nav class="menu-">
+                    <p>Nuestros dias y horarios</p>
+                    <p>Lunes a Domingos de 7:30 a 20:30</p>
+                    <p>Av. Rivadavia 11288, CABA</p>
+        </nav>
+    </section>
+    <div class="redes-sociales">
+
+        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Facebook"
+                id="imgfb"> </a>
+
+        <a href="https://instagram.com/" target="_blank"> <img src="./img/instagram.png" alt="Instagram"
+                id="imginst"></a>
+    </div>
+
+    <p><img id="gif-ppal" src="img/cafe.gif" alt="gif de cafe" width="200"> </p><!--esto es un gif-->
+
+    <p>Grupo 20 | Python Codo a Codo | © 2023</p>
+  </footer>
 
 </body>
 </html>
