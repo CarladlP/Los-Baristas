@@ -27,5 +27,6 @@ que no es responsive el main, y que no cumplimos con esa consigna, y nos comprom
 Debajo se adjunta el link dónde se puede ver el deploy de nuestra página web.
 
 Saludos, equipo 20.
+https://carladlp.github.io/Los-Baristas/
 
 
