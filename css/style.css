@@ -73,6 +73,55 @@
 
  }
 
+ .carrusel {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .carrusel-items {
+   display: flex;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 40px 0px;
+ }
+ 
+ .carrusel-item {
+   outline: 2px solid black;
+   cursor: pointer;
+ }
+ 
+ .carrusel-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .carrusel-item:hover {
+   transform: scale(1.2);
+ }
+
+ #imgfb, #imginst{
+   width: 20px;
+}
+
+ footer {
+   color: rgb(231, 219, 200);
+   background-color: #9c4444;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 15px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   box-shadow: 2px 2px 10px white;
+   background-color:#9c4444(0, 0, 0);
+ }
+ .menu-{
+   display: flex;
+   flex-direction: column;
+}
+ 
+
  /* esto me cambia todo en la pagina completa*/
  /* Selector UNiversal: *
    *{
