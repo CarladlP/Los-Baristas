@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>Contáctenos</h1>
+    <p>Dejanos tu mensaje, pronto nos comunicaremos contigo</p>
+    <form action="">
+        <label for="inputNombre">Nombre: </label>
+        <br>
+        <input type="text" id="inputNombre" autofocus>
+        <br>
+        <label for="inputApellido">Apellido: </label>
+        <br>
+        <input type="text" id="inputApellido">
+        <br>
+        <label for="inputMail">Mail: </label>
+        <br>
+        <input type="email" name="inputMail" id="inputMail" required><!--Agregamos requiered para que sea obligatorio el input-->
+        <br>
+        <label for="textAreaMensaje">Mensaje: </label>
+        <br>
+        <textarea id="textAreaMensaje" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar datos...">
+        <input type="reset" value="Borrar todo...">
+    </form>
+    <p><a href="../index.html">Volver...</a></p>
+    <!--el color se lo da css donde especifico el color de a-->
+</body>
+
+</html>
