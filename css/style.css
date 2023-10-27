@@ -1,4 +1,5 @@
- /* PALETA DE COLORES proyecto CAFÉ:
+/* LOS Bordes después los saco a todos, al ppio los pongo par ver la estructura*/
+/* PALETA DE COLORES proyecto CAFÉ:
 
  #9A3B3B  rgb(154, 59, 59)
 
@@ -13,69 +14,216 @@
  /*Agreguamos un estilo de fuente de letra más acorde al formato digital*/
 
 
- /* Selector de etiqueta*/
+* {
+    padding: auto;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main,footer {
+    /*border: 3px  red solid;*/
+    min-height: 50px;
+    margin: 0.5rem
+ }
+
+ /* sobreescribo cositas del body */
  body {
     background-image: url(../img/fondo_1920.jpg);
     background-size: cover;
     /*Centramos el fondo de la imagen*/
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-size: 32px;
+    /*font-size: 32px;*/
  }
+footer{
+    background: #C08261 ;
+}
 
- h1 {
-    font-size: 2rem;
-    /*Usamos rem porque depende del elemento raiz*/
-    background: hsla(53, 66%, 85%, 0.50);
-    color: #9c4444;
- }
+header{
+    /*background: #C08261;*/
+    box-shadow:0 0 0.5rem rgb(83 78 76 / 50%); /* sombra al header*/
+}
+/* bloque para generar un topnav responsive, con corte a los  600px, ai se hace tipo apilado */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#E2C799;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: #471d1d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #F2ECBE;}
+  
+  ul.topnav li a.active {background-color:#C08261;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
 
- h2 {
-    font-size: 1.5rem;
- }
-
- p {
-    font-size: 1rem;
- }
-
-
- a {
-    color: #876c5e;
-
- }
-
- /* selector por ID*/
- #enlaceDeContacto {
-    font-size: 1rem;
+/* Fin bloque topnav */
+ /* Selector por clase*/
+ .oscuro{
+    background: #F2ECBE ;
     color: #9A3B3B;
  }
 
- #enlacePagina {
-    font-size: 1rem;
+ main {
+    min-height: 300px;
+    overflow: auto;  /* evito desbordamiento, todo adentro del main*/
+    /*background-color:  #E2C799;*/
  }
 
- /* Selector por clase*/
- .oscuro {
-    background: hsla(53, 67%, 85%, 0.50);
-    color: #953d3d;
+/*este div es un hijo directo del main lo puedeo referenciar asi*/
+/* Contenido ppal*/
+main>div  { 
+   /* border: 2px green solid;*/
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;  /* que la altura se adapte al contenido*/
+    float: left; /* que el div se vaya a la izq*/
+    width: 65%;
+}       
+
+ /* Voy a usar el selector de clase para darle estilo a las diferentes clases  */
+
+ .secciones {
+    /*border: 2px #331313 solid;*/
+    min-height: 50px;
+    margin: 0.5rem;
+
  }
 
- .ancla {
-    color: rgb(68, 45, 22);
- }
+ /*las clases secciones cuyo contenido sea article se le aplica esta regla css */
+ .secciones article {
+    /* border:2px purple solid;*/
+    margin: 0.5rem;
+    min-height: 20px;
+} 
 
+.header-logo{
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
 
- .subrayado {
-    text-decoration: underline 2px #9A3B3B;
- }
+/* estilo header con grid*/
+.item1 { grid-area: header; }
+.item2 { grid-area: logo; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
 
- .tamaño {
-    font-size: 1rem;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    
+    'logo header header header header header'
+    'logo main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 3px;
+  /*background-color: #2196F3;*/
+  padding: 2px;
+}
 
- }
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+} 
+/*FIN header con grid*/
+/*  divs con Flexbox*/
 
- /* esto me cambia todo en la pagina completa*/
- /* Selector UNiversal: *
-   *{
-      background-color: #E2C799;
-   }
-   */
+.flex-container {
+    display: flex;
+    justify-content: space between;/* Espacio entre los hijos */
+    align-items: stretch; /* Los hijos se estiran para ocupar toda la altura del contenedor */
+    flex-wrap: wrap;
+   /*max-width: 600px;*/ /* Limitamos el ancho del contenedor para mantenerlo centrado */
+  /*margin: 0 auto;*/ /* Centramos el contenedor en la página */
+  }
+  
+  .flex-container > div {
+    flex: 1; /* Los hijos toman igual cantidad de espacio disponible */
+    min-width: 0; /* Aseguramos que los hijos puedan reducir su tamaño si es necesario */
+    /*border: 1px solid #000; *//* Solo para visualización, puedes eliminarlo */
+    padding: 10px; /* Agrega espacio interno para que los contenidos se vean mejor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    font-size: 1.5rem;
+  }
+/*Estilo para el aside y las imagenes*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes horizontalmente */
+    justify-content: center; /* Centra las imágenes verticalmente */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  }
+  
+  .imagen {
+    flex: 1; /* Hace que todas las imágenes ocupen el mismo espacio verticalmente */
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    text-align: center; /* Centra el contenido de cada imagen horizontalmente */
+    padding: 10px; /* Agrega espacio interno para mejorar la presentación */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  
+  .imagen img {
+    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor de imagen */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+  }
+ 
+  
+/*estilo div horizontal sucursales*/
+.contenedores {
+    display: flex;
+    flex-direction: row; /* Las cajas se alinearán horizontalmente */
+    justify-content: space-between; /* Espacio uniforme entre las cajas */
+    /*background-color: #ccc;*/ /* Color de fondo del contenedor */
+    padding: 20px; /* Espacio interno para dar margen al contenido */
+  }
+  
+  .box {
+    flex: 1; /* Las cajas ocuparán el mismo espacio horizontalmente */
+    padding: 10px; /* Espacio interno para dar margen al contenido de las cajas */
+   /* border: 1px solid #666; *//* Borde alrededor de las cajas (puedes personalizarlo) */
+  }
+  
+
+/* Estilo footer, con flexbox y 4 cajas*/
+.footer {
+    display: flex;
+    justify-content: space-between; /* Distribuye las cajas de forma equitativa horizontalmente */
+    background-color:#E2C799; /* Color de fondo del footer */
+    color: #fff; /* Color de texto en el footer */
+    padding: 20px; /* Espacio interno para dar margen al contenido */
+  }
+  
+  .caja {
+    flex: 1; /* Las cajas ocupan el mismo espacio horizontalmente */
+    padding: 10px; /* Espacio interno para dar margen al contenido de las cajas */
+   /* border: 1px solid #666; *//* Borde alrededor de las cajas (puedes personalizarlo) */
+    text-align: center; /* Centra el texto horizontalmente en cada caja */
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente en cada caja */
+  }
+  .caja p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+  }
