@@ -7,69 +7,165 @@
  #E2C799   rgb(226, 199, 153)
  
  #F2ECBE   rgb(242, 236, 190)
- 
+
  */
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&display=swap');
- /*Agreguamos un estilo de fuente de letra más acorde al formato digital*/
+
 
 
  /* Selector de etiqueta*/
- body {
-    background-image: url(../img/fondo_1920.jpg);
-    background-size: cover;
-    /*Centramos el fondo de la imagen*/
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-size: 32px;
- }
 
- h1 {
-    font-size: 2rem;
-    /*Usamos rem porque depende del elemento raiz*/
-    background: hsla(53, 66%, 85%, 0.50);
-    color: #9c4444;
- }
-
- h2 {
-    font-size: 1.5rem;
- }
-
- p {
-    font-size: 1rem;
- }
-
-
- a {
-    color: #876c5e;
-
- }
-
- /* selector por ID*/
- #enlaceDeContacto {
-    font-size: 1rem;
+ h1{
+    background: #F2ECBE;
     color: #9A3B3B;
+
+  }
+
+  a{
+      color:#C08261;
+
+  }
+  
+  /* selector por ID*/
+
+   #enlaceDeContacto {
+      color: #9A3B3B;
+   }
+   /* Selector por clase*/
+   .oscuro{
+      background: #F2ECBE ;
+      color: #9A3B3B;
+   }
+
+   .subrayado {
+      text-decoration: underline 2px #9A3B3B;
+   }
+    
+   /* esto me cambia todo en la pagina completa*/
+   /* Selector UNiversal: *
+   *{
+      background-color: #E2C799;
+   }
+   */
+
+   /*  estilo menu en fila bonito*/
+   /* menu*/
+   .header-menubar{
+      left: auto;
+      position: relative;
+      top: auto;
+      width: auto;
+      display: inline-block;
+      margin: 0.5rem 0 0.5rem 1rem;
+  }
+
+ .header-menubar ul {
+   list-style: none; }/* le saco el estilo a la lista en el header*/
+
+
+
+.header-menubar li {
+    float: left; /* todos los elementos list item por defecto  elemento en bloque*/
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.5rem 0; /* espacio entre elementos del menu usando margenes*/
+} 
+
+/* si comento este bloque recupero el menu en forma vertical y no en fila*/
+
+.header-menubar a {   /* todos los hipervinculos del menu sin raya abajo*/
+   text-decoration: none;
+   /*color: #331313;*/
+}
+
+.header-menubar a:hover{
+   color: #F2ECBE;   /* pseudo clase al menu, para q cdo paso el mouse por encima del menu cambie el color*/
+}
+
+/*#gif-ppal {
+    width: 30%;
+}  controlo el ancho del gif. si le pongo 100 ocupa todo el aside */
+main>aside { 
+   border: 2px blue solid;
+   min-height: 180px;
+   min-width: 30%;
+   margin: 0.5rem;
+   float:left; /* si tiene lugar me pone uno al lado del otro con el left*/
+   width: auto;
+}
+
+/*Estilo para el aside y las imagenes*/
+.contenedor {
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Centra las imágenes horizontalmente */
+   justify-content: center; /* Centra las imágenes verticalmente */
+   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+ }
+ 
+ .imagen {
+   flex: 1; /* Hace que todas las imágenes ocupen el mismo espacio verticalmente */
+   max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+   text-align: center; /* Centra el contenido de cada imagen horizontalmente */
+   padding: 10px; /* Agrega espacio interno para mejorar la presentación */
+   box-sizing: border-box; /* Incluye el padding en el ancho total */
+ }
+ 
+ .imagen img {
+   max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor de imagen */
+   height: auto; /* Mantiene la proporción de aspecto de las imágenes */
  }
 
- #enlacePagina {
-    font-size: 1rem;
+/*
+
+    <!--hasta aca chequeado-->
+
+    <aside class="aside">
+    <h2 id="checkbox"> Elija su bebida favorita</h2>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox1">
+      <label for="checkbox1"> Café expreso</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox2">Café cortado</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox3">
+      <label for="checkbox3">Americano</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox4">
+      <label for="checkbox4">Latte Machiatto</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox5">
+      <label for="checkbox5">Capuccino</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox6">
+      <label for="checkbox6">Frapuccino</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox7">
+      <label for="checkbox7">Té en Hebras</label>
+    </div>
+  </aside>
+  </aside> */
+
+   /* estilo para el aside*/
+ aside {
+   display: flex;
+   flex-direction: column;
+   background-color: #f0f0f0;
+   padding: 20px;
  }
-
- /* Selector por clase*/
- .oscuro {
-    background: hsla(53, 67%, 85%, 0.50);
-    color: #953d3d;
+ 
+ .checkbox {
+   display: flex;
+   align-items: center;
+   margin: 5px 0;
  }
-
- .ancla {
-    color: rgb(68, 45, 22);
+ 
+ input[type="checkbox"] {
+   margin-right: 10px;
  }
-
-
- .subrayado {
-    text-decoration: underline 2px #9A3B3B;
- }
-
- .tamaño {
-    font-size: 1rem;
-
- }
-
