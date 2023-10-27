@@ -263,26 +263,42 @@ main>div  {
   }
   
 
-/* Estilo footer, con flexbox y 4 cajas*/
-.footer {
+.carrusel-items {
     display: flex;
-    justify-content: space-between; /* Distribuye las cajas de forma equitativa horizontalmente */
-    background-color:#E2C799; /* Color de fondo del footer */
-    color: #fff; /* Color de texto en el footer */
-    padding: 20px; /* Espacio interno para dar margen al contenido */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 40px 0px;
   }
   
-  .caja {
-    flex: 1; /* Las cajas ocupan el mismo espacio horizontalmente */
-    padding: 10px; /* Espacio interno para dar margen al contenido de las cajas */
-   /* border: 1px solid #666; *//* Borde alrededor de las cajas (puedes personalizarlo) */
-    text-align: center; /* Centra el texto horizontalmente en cada caja */
-    font-size: 1.5rem;
+  .carrusel-item {
+    outline: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carrusel-item:hover {
+    transform: scale(1.2);
+  }
+ 
+  
+  
+#imgfb, #imginst{
+    width: 40px;
+  }
+  
+  footer {
+    color: rgb(154, 59, 59);
+    background-color: rgb(226, 199, 153);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente en cada caja */
+    text-align: center;
+    background-color:rgb(78, 26, 26) (0, 0, 0);
   }
-  .caja p {
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
-  }
->>>>>>> 67dcc08369b1985cd8777d0807c673145efd80b7
+  
